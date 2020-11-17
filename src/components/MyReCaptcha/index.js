@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 // Redux
-import { setCaptcha } from '../../store/actions/captchaActions';
 import { useDispatch } from 'react-redux';
+import { setCaptcha } from '../../store/actions/captchaActions';
 
 const SITE_KEY = '6LfjTuAZAAAAAODtU1CfMXETuWYjrWks0atG91fv';
 
@@ -17,9 +17,7 @@ const MyReCaptcha = () => {
   const handleChange = (value) => {
     if (value) {
       setExpired(false);
-    }
-
-    if (value === null) {
+    } else {
       setExpired(true);
     }
   };

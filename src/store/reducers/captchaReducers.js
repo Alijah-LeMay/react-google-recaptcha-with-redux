@@ -6,9 +6,9 @@ import {
 export const captchaReducer = (state = { loading: true }, action) => {
   switch (action.type) {
     case SET_CAPTCHA_SUCCESS:
-      return { loading: false, captcha: action.payload };
+      return { captcha: action.payload };
     case SET_CAPTCHA_FAIL:
-      return { loading: false, error: action.payload };
+      return { error: action.payload };
     default:
       return state;
   }
