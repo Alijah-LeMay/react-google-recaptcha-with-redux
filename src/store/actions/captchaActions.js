@@ -3,10 +3,8 @@ import {
   SET_CAPTCHA_FAIL,
 } from '../../constants/captchaConstants';
 
-export const setCaptcha = (value) => async (dispatch) => {
+export const setCaptcha = (data) => async (dispatch) => {
   try {
-    const data = value;
-
     dispatch({
       type: SET_CAPTCHA_SUCCESS,
       payload: data,

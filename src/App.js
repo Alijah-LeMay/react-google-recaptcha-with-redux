@@ -1,13 +1,12 @@
 import { Provider } from 'react-redux';
+import HomeScreen from './screens/HomeScreen';
 import store from './store';
-
-import MyReCaptcha from './components/MyReCaptcha';
 
 function App() {
   return (
     <>
       <Provider store={store}>
-        <MyReCaptcha />
+        <HomeScreen />
       </Provider>
     </>
   );
