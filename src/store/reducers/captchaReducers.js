@@ -1,9 +1,9 @@
 import {
   SET_CAPTCHA_SUCCESS,
   SET_CAPTCHA_FAIL,
-} from '../../constants/captchaConstants';
+} from "../../constants/captchaConstants";
 
-export const captchaReducer = (state = { loading: true }, action) => {
+export const captchaReducer = (state = {}, action) => {
   switch (action.type) {
     case SET_CAPTCHA_SUCCESS:
       return { captcha: action.payload };

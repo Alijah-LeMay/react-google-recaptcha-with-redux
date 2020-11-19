@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import ReCAPTCHA from 'react-google-recaptcha';
-// Redux
-import { useDispatch } from 'react-redux';
-import { setCaptcha } from '../../store/actions/captchaActions';
+import React, { useEffect, useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 
-const SITE_KEY = '6LfjTuAZAAAAAODtU1CfMXETuWYjrWks0atG91fv';
+// Redux
+import { useDispatch } from "react-redux";
+import { setCaptcha } from "../../store/actions/captchaActions";
+
+const SITE_KEY = "6LfjTuAZAAAAAODtU1CfMXETuWYjrWks0atG91fv";
 
 const MyReCaptcha = () => {
   const dispatch = useDispatch();
@@ -25,8 +26,8 @@ const MyReCaptcha = () => {
   return (
     <div>
       <ReCAPTCHA
-        style={{ display: 'inline-block' }}
-        theme='dark'
+        style={{ display: "inline-block" }}
+        theme="dark"
         sitekey={SITE_KEY}
         onChange={handleChange}
       />

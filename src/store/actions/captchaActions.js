@@ -1,9 +1,9 @@
 import {
   SET_CAPTCHA_SUCCESS,
   SET_CAPTCHA_FAIL,
-} from '../../constants/captchaConstants';
+} from "../../constants/captchaConstants";
 
-export const setCaptcha = (data) => async (dispatch) => {
+export const setCaptcha = (data) => (dispatch) => {
   try {
     dispatch({
       type: SET_CAPTCHA_SUCCESS,
